@@ -2,7 +2,7 @@ FROM arm64v8/debian:stable-slim
 
 RUN mkdir /ns-3-dev
 WORKDIR /ns-3-dev 
-VOLUME . /ns-3-dev
+#VOLUME . /ns-3-dev
 
 # Install essential binaries
 RUN apt-get update && apt-get upgrade -y
